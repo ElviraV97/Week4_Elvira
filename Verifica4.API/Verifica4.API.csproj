@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Verifica4.Core2\Verifica4.Core2.csproj" />
+    <ProjectReference Include="..\Verifica4.EntityFrk2\Verifica4.EntityFrk2.csproj" />
+  </ItemGroup>
+
+</Project>

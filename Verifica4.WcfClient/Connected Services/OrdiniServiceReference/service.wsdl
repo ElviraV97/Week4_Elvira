@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OrdiniService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Verifica4.Core2.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrdiniService_GetClienti_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClienti" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_GetClienti_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_GetClienteById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClienteById" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_GetClienteById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClienteByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_AddNewCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewCliente" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_AddNewCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_EditCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCliente" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_EditCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_DeleteCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCliente" />
+  </wsdl:message>
+  <wsdl:message name="IOrdiniService_DeleteCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClienteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrdiniService">
+    <wsdl:operation name="GetClienti">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdiniService/GetClienti" message="tns:IOrdiniService_GetClienti_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdiniService/GetClientiResponse" message="tns:IOrdiniService_GetClienti_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClienteById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdiniService/GetClienteById" message="tns:IOrdiniService_GetClienteById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdiniService/GetClienteByIdResponse" message="tns:IOrdiniService_GetClienteById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdiniService/AddNewCliente" message="tns:IOrdiniService_AddNewCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdiniService/AddNewClienteResponse" message="tns:IOrdiniService_AddNewCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdiniService/EditCliente" message="tns:IOrdiniService_EditCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdiniService/EditClienteResponse" message="tns:IOrdiniService_EditCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdiniService/DeleteCliente" message="tns:IOrdiniService_DeleteCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdiniService/DeleteClienteResponse" message="tns:IOrdiniService_DeleteCliente_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOrdiniService" type="tns:IOrdiniService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetClienti">
+      <soap:operation soapAction="http://tempuri.org/IOrdiniService/GetClienti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClienteById">
+      <soap:operation soapAction="http://tempuri.org/IOrdiniService/GetClienteById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewCliente">
+      <soap:operation soapAction="http://tempuri.org/IOrdiniService/AddNewCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCliente">
+      <soap:operation soapAction="http://tempuri.org/IOrdiniService/EditCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <soap:operation soapAction="http://tempuri.org/IOrdiniService/DeleteCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrdiniService">
+    <wsdl:port name="BasicHttpBinding_IOrdiniService" binding="tns:BasicHttpBinding_IOrdiniService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Verifica4.WcfService/OrdiniService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verifica4.WcfClient", "Verifica4.WcfClient\Verifica4.WcfClient.csproj", "{D534F6D7-0563-4C25-8A08-47A11EB18969}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3367D488-DC2E-416C-8D45-841B2B84B786} = {3367D488-DC2E-416C-8D45-841B2B84B786}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verifica4.WcfService", "Verifica4.WcfService\Verifica4.WcfService.csproj", "{3367D488-DC2E-416C-8D45-841B2B84B786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verifica4.Core2", "Verifica4.Core2\Verifica4.Core2.csproj", "{B3094EAC-432B-4CC6-8F53-B6E31F107F67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verifica4.EntityFrk2", "Verifica4.EntityFrk2\Verifica4.EntityFrk2.csproj", "{82030CC0-DC92-4025-99BC-1DA56677A233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verifica4.API", "Verifica4.API\Verifica4.API.csproj", "{DFEA066F-236E-48E4-BE8F-5924E8A1E194}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D534F6D7-0563-4C25-8A08-47A11EB18969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D534F6D7-0563-4C25-8A08-47A11EB18969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D534F6D7-0563-4C25-8A08-47A11EB18969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D534F6D7-0563-4C25-8A08-47A11EB18969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3367D488-DC2E-416C-8D45-841B2B84B786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3367D488-DC2E-416C-8D45-841B2B84B786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3367D488-DC2E-416C-8D45-841B2B84B786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3367D488-DC2E-416C-8D45-841B2B84B786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3094EAC-432B-4CC6-8F53-B6E31F107F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3094EAC-432B-4CC6-8F53-B6E31F107F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3094EAC-432B-4CC6-8F53-B6E31F107F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3094EAC-432B-4CC6-8F53-B6E31F107F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82030CC0-DC92-4025-99BC-1DA56677A233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82030CC0-DC92-4025-99BC-1DA56677A233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82030CC0-DC92-4025-99BC-1DA56677A233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82030CC0-DC92-4025-99BC-1DA56677A233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEA066F-236E-48E4-BE8F-5924E8A1E194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEA066F-236E-48E4-BE8F-5924E8A1E194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEA066F-236E-48E4-BE8F-5924E8A1E194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEA066F-236E-48E4-BE8F-5924E8A1E194}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCB23500-669E-4A27-8586-757017EA951F}
+	EndGlobalSection
+EndGlobal
