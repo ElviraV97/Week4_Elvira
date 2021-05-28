@@ -32,6 +32,9 @@ namespace Verifica4.WcfClient
             cliente = bl.FetchClienteById(clientId);
 
             Console.WriteLine($"{cliente.Id} - {cliente.Nome} {cliente.Cognome}");
+
+            Console.WriteLine("Press a button to exit: ");
+            Console.ReadLine();
         }
     }
 }
