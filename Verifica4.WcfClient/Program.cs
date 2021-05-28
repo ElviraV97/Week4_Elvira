@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Verifica4.Core2.BusinessLayer;
 using Verifica4.Core2.Interfaces;
-using Verifica4.Core2.Model;
 using Verifica4.EntityFrk2.Repositories;
-
+using Verifica4.WcfClient.OrdiniServiceReference;
 
 namespace Verifica4.WcfClient
 {
@@ -15,21 +14,16 @@ namespace Verifica4.WcfClient
     {
         static void Main(string[] args)
         {
-         
 
-            IOrdiniBL bl;
-
-            var clienteRepo = new EFClienteRepository();
-            var ordineRepo = new EFOrdineRepository();
-            bl = new OrdiniBL(clienteRepo, ordineRepo);
-
+            OrdiniServiceClient service = new OrdiniServiceClient();
+                                    
             Cliente cliente;
 
             Console.Write("ID: ");
             string id = Console.ReadLine();
             int.TryParse(id, out int clientId);
 
-            cliente = bl.FetchClienteById(clientId);
+            cliente = service.GetClienteById(clientId);
 
             Console.WriteLine($"{cliente.Id} - {cliente.Nome} {cliente.Cognome}");
 
